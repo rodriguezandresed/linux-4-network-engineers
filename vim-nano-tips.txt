@@ -1,0 +1,39 @@
+VIM: Vim uses command mode and edit  (or insert) mode ( pressing i and esc to exit)
+
+To save files you type in command mode :w or :w Namefile if it isn't named
+
+:q to exit.
+
+:wq! vim exits, saves and doesn't prompt before exiting. THE ORDER IS IMPORTANT!
+
+We use the keys h (left) j (down) k (up) l (right) to move as arrow keys
+
+In terms of words: w moves to the start of next word; e moves to the end of the word; and b moves to beginning of the word.
+
+Moving within the text is not limited to individual keys; you can combine movement keys with a number. For example, 3w is the same as pressing w three times.
+
+
+You can insert text multiple times.For example, an underline of a header might consist of 30 -s.
+
+With 30i (then we type) - Esc, output is 30 times ---.
+
+In text that is structured with parentheses or brackets, ( or { or [, use % to jump to the matching parenthesis or bracket.
+
+To find and move to the next (or previous) occurrence of a character, use f and F, e.g. fo finds next o.
+
+VIM SHORTCUTS (no : before letters)
+
+g -> bottom of the file
+
+gg -> top of the file
+
+/ -> search example: /ubuntu it would search for the word ubuntu on the file, using the n letter it skips to the next finding.
+
+esc + u -> undo changes
+
+dd -> delete line
+
+NANO SHORTCUTS:
+
+ctrl +k -> cut a line
+ctrl +u -> paste the line
