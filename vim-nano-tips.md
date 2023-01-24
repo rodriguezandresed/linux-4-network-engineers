@@ -58,8 +58,10 @@ esc + u -> undo changes
 
 dd -> delete line
 
-NANO SHORTCUTS:
+```
 
+NANO SHORTCUTS:
+```bash
 ctrl +k -> cut a line
 ctrl +u -> paste the line
 ```
