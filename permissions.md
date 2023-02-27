@@ -1,19 +1,28 @@
-Permissions on Linux:
+`mkdir -p` to create parent directories
 
-filetypecode(3)(3)(3)
+To remove a permission for all users we can:
 
-(owner)(group)(other)
+For example, to remove read permission, being "a" all users:
 
-r = read  (4)
+`chmod a-r test1.txt`
 
-w = write (2)
+Or to give execute permissions to all users:
 
-x = execute (1)
+`chmod a+x test1.txt`
 
-So for example, a value of 6 would mean read and write
+We can change the a for:
 
-`chmod` is used to change permissions
+o -> other
 
-Remember we can pipe outputs to format text such as `command | grep` or `more or `less`
+g-> group
 
-Remember that less allows you to scroll up the output and more only lets you keep scrolling down
+u-> user
+
+Setting all at once:
+
+`chmod u=rx, g-w, o-x test1.txt`
+
+write permission on files -> you can edit them
+
+write permission on directories -> you can create/delete directories
+
